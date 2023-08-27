@@ -147,18 +147,22 @@ h2{
 
 .input-group {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
     background: none;
+    margin: 10px; 
+    color: white;
+    gap: 45px;
+    
+    
+}
+.input-group input{
+    border-radius: 10px;
+    background: none;  
+    color: white;
+    width: 42%;
+
 }
 
-.input-group input, textarea {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: none;
-}
+
 
 .label-group {
     display: flex;
@@ -171,13 +175,13 @@ label {
     font-weight: bold;
 }
 
-input:focus + label, textarea:focus + label {
+input:focus + input, textarea:focus + label {
     display: none;
     background: none;
 }
 
 textarea {
-    width: 100%;
+    width: 80%;
     background: none;
 }
 
