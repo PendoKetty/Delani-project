@@ -181,9 +181,3 @@ textarea {
     background: none;
 }
 
-#confirmation {
-    display: none;
-    margin-top: 10px;
-    font-weight: bold;
-    color: green;
-}
