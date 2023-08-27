@@ -6,6 +6,7 @@
         <title>Delani Studio Landing Page</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
         <section class="landing-page">
@@ -66,21 +67,21 @@
                             <img src="images/services_icons/design_icon.png" alt="Design Image">
                         </div>
                         <div class="service-name">DESIGN</div>
-                        <div class="description">Description for Design goes here.</div>
+                        <div class="description">We do user interface design and experience</div>
                     </div>
                     <div class="what-we-do-item">
                         <div class="image-container">
                             <img src="images/services_icons/dev_icon.png" alt="Development Image">
                         </div>
                         <div class="service-name">DEVELOPMENT</div>
-                        <div class="description">Description for Development goes here.</div>
+                        <div class="description">Our team of software engineers write very clean and effiencient code</div>
                     </div>
                     <div class="what-we-do-item">
                         <div class="image-container">
                             <img src="images/services_icons/product_icon.png" alt="Product Mgt Image">
                         </div>
                         <div class="service-name">PRODUCT MANAGEMENT</div>
-                        <div class="description">Description for Product Management goes here.</div>
+                        <div class="description">To ensure timely delivery of projects, we oversee the project end to end.</div>
                     </div>
                 </div>
             </div>
@@ -110,13 +111,27 @@
                 <h2 class="display-8">
                     CONTACT US
                 </h2>
-                <p class="details">
-                    Before we sign a contract or write a line of code, our team willl spend the necessary time needed to understand your product vision.<br/>
-                    <br/>
-                    The outcome of this scoping session is proposal or high-level statement of work.<br/>
-                    <br/>
-                    Based on ypur requirements, we can provide a complete offering or just pieces you need.<br/>
-                </p>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="input-container">
+                            <div class="input-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        
+                        <div class="input-container">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </form>
+                    <div id="confirmation" style="display: none;">Thank you for your message! We'll get back to you soon.</div>
+                </div>   
+
             </div>
         </section>
         <section class="social-media-icons">
