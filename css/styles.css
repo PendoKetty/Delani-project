@@ -1,0 +1,25 @@
+.landing-page{
+    background-image: url('../images/backgrounds/h_img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.landing-page.lead{
+    font-size: 3px;
+}
+btn {
+    position: absolute;
+    bottom: 0.5rem; /* Adjust this value to position the button */
+}
+
+.about-us{
+    align-items: center;
+    text-align: center;
+    color: black;
+}
