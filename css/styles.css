@@ -34,3 +34,43 @@ btn {
     justify-content: center;
     flex-direction: column;
 }
+
+.portfolio {
+    display: flex;
+}
+
+.portfolio-item {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 10vh;
+    height: 10vh;
+    display: block;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.overlay .service-name {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
