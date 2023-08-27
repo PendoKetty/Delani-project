@@ -14,8 +14,9 @@
     font-size: 3px;
 }
 btn {
-    position: absolute;
-    bottom: 0.5rem; /* Adjust this value to position the button */
+    padding-top : 22px;
+    margin-top: 10%;
+    padding-bottom: 30px;
 }
 
 .about-us{
