@@ -116,11 +116,9 @@ h2{
     display: flex;
     justify-content: center;
 }
-
 .service-name.bold {
     font-weight: bold;
 }
-
 .description {
     display: none;
     text-align: center;
