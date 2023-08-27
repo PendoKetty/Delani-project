@@ -23,3 +23,14 @@ btn {
     text-align: center;
     color: black;
 }
+
+.services{
+    background-image: url('../images/backgrounds/s_image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
