@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    constant submitButton={#submit}
     $(".what-we-do-item").click(function() {
         // Toggle the description visibility
         var description = $(this).find(".description");
@@ -14,4 +15,7 @@ $(document).ready(function() {
         // Remove bold from other service names
         $(".service-name").not(serviceName).removeClass("bold");
     });
+    
+
+    
 });
