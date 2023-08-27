@@ -1,21 +1,12 @@
-$(document).ready(function() {
-    constant submitButton={#submit}
-    $(".what-we-do-item").click(function() {
-        // Toggle the description visibility
-        var description = $(this).find(".description");
-        description.slideToggle();
-        
-        // Toggle bold font-weight for service name
-        var serviceName = $(this).find(".service-name");
-        serviceName.toggleClass("bold");
-        
-        // Hide other descriptions
-        $(".description").not(description).slideUp();
-        
-        // Remove bold from other service names
-        $(".service-name").not(serviceName).removeClass("bold");
-    });
-    
+const serviceItems = document.querySelectorAll('.what-we-do-item');
 
-    
+// Add event listeners for mouse enter and leave events
+serviceItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.classList.add('hovered'); 
+    });
+
+    item.addEventListener('mouseleave', () => {
+        item.classList.remove('hovered'); 
+    });
 });

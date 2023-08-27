@@ -124,11 +124,33 @@ h2{
     display: none;
     text-align: center;
 }
+.what-we-do-item:hover .image-container,
+.what-we-do-item:hover .service-name {
+    display: none;
+}
+.what-we-do-item:hover .description {
+    display: block;
+}
 
+.what-we-do-item.hovered {
+    background-color:none;
+}
 .contact-form {
     background: none; 
     padding: 20px;
     border-radius: 10px;
+}
+
+.input-container {
+    background: none;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: none;
 }
 
 .input-group input, textarea {
@@ -136,4 +158,33 @@ h2{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: none;
+}
+
+.label-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input:focus + label, textarea:focus + label {
+    display: none;
+    background: none;
+}
+
+textarea {
+    width: 100%;
+    background: none;
+}
+
+#confirmation {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
 }
